@@ -1,0 +1,98 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Webhook</title>
+    <link rel="stylesheet" href="style.css"> <!-- Incluindo o arquivo de estilo -->
+    <style>
+      /* Estilos adicionais */
+      .discord-link {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        text-align: center;
+        z-index: 1000; /* Para garantir que esteja acima de outros elementos, se necessário */
+      }
+
+      .discord-link img {
+        width: 50px; /* Tamanho do ícone do Discord */
+        height: auto;
+        cursor: pointer;
+        animation: spin 2s linear infinite; /* Adicionando a animação de rotação */
+      }
+
+      .discord-link span {
+        display: block;
+        margin-top: 5px;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Enviar Webhook</h1>
+
+        <label for="webhookURL">URL do Webhook:</label><br>
+        <input type="text" id="webhookURL" placeholder="Insira a URL do seu webhook"><br><br>
+
+        <label for="username">Nome de Usuário:</label><br>
+        <input type="text" id="username" placeholder="Insira o nome de usuário"><br><br>
+
+        <label for="avatarURL">URL do Avatar:</label><br>
+        <input type="text" id="avatarURL" placeholder="Insira a URL do avatar"><br><br>
+
+        <label for="content">Conteúdo da Mensagem:</label><br>
+        <textarea id="content" placeholder="Insira o conteúdo da mensagem"></textarea><br><br>
+
+        <label for="mentionRole">Marcar Todos:</label>
+        <input type="checkbox" id="mentionRole"><br><br>
+
+        <label for="mentionSingleRoleCheckbox">Marcar Cargo Específico:</label>
+        <input type="checkbox" id="mentionSingleRoleCheckbox"><br><br>
+
+        <div id="mentionSingleRoleContainer" style="display: none;">
+          <label for="mentionSingleRole">ID do Cargo Específico:</label><br>
+          <input type="text" id="mentionSingleRole"><br><br>
+        </div>
+
+        <label for="embedCheckbox">Enviar como Embed:</label>
+        <input type="checkbox" id="embedCheckbox"><br><br>
+
+        <div id="embedContentContainer" style="display: none;">
+          <label for="embedTitle">Título do Embed:</label><br>
+          <input type="text" id="embedTitle" placeholder="Insira o título do embed"><br><br>
+
+          <label for="embedDescription">Descrição do Embed:</label><br>
+          <textarea id="embedDescription" placeholder="Insira a descrição do embed"></textarea><br><br>
+
+          <label for="embedColor">Cor do Embed:</label><br>
+          <input type="color" id="embedColor"><br><br>
+
+          <label for="footerText">Texto do Rodapé do Embed:</label><br>
+          <input type="text" id="footerText" placeholder="Insira o texto do rodapé do embed"><br><br>
+
+          <label for="footerIconURL">URL do Ícone do Rodapé do Embed:</label><br>
+          <input type="text" id="footerIconURL" placeholder="Insira a URL do ícone do rodapé do embed"><br><br>
+        </div>
+
+        <button id="sendWebhook">Enviar Webhook</button><br><br>
+
+        <pre id="generatedCode"></pre>
+
+      </div>
+
+      <div class="discord-link">
+        <a href="https://discord.gg/qK5vqSEZ" target="_blank" rel="noopener noreferrer">
+          <img src="https://www.svgrepo.com/show/353655/discord-icon.svg" alt="Discord Icon">
+          <span></span>
+        </a>
+      </div>
+
+      <script src="script.js"></script> <!-- Incluindo o arquivo de script -->
+    </body>
+    </html>

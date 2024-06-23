@@ -1,0 +1,98 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Fonte padrão */
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://cdn.discordapp.com/icons/1068072819562381332/a_2a2f6817111badd773ff739fc757be48.gif?size=2048');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Exemplo de fonte alternativa */
+  color: #333; /* Cor do texto */
+}
+
+label {
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Exemplo de fonte alternativa */
+  color: #555; /* Cor do texto */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Arial', sans-serif; /* Fonte padrão */
+}
+
+input[type="color"] {
+  vertical-align: middle;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Exemplo de fonte alternativa */
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Transição suave de cor ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+button:hover {
+  background-color: #45a049; /* Cor de fundo alterada no hover */
+}
+
+pre {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace; /* Exemplo de fonte monoespaçada */
+}
+
+.discord-link {
+  margin-top: 20px;
+}
+
+.discord-link a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Exemplo de fonte alternativa */
+}
+
+.discord-link img {
+  width: 30px; /* Define a largura do ícone do Discord */
+  margin-right: 10px;
+  vertical-align: middle;
+}
